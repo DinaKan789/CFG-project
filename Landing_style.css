@@ -51,20 +51,9 @@ ol {
   display: flex;
 }
 
-li#higher {
-  margin-top: 14%;
-}
-
-li#lower {
-  margin-top: 7%;
-}
-
-li#lowest {
-  margin-top: 14%;
-}
 
 li {
-  margin: 20px;
+  margin: 0 20px;
   transition: 0.6s ease;
 }
 
