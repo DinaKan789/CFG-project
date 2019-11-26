@@ -10,7 +10,7 @@
         height: 400px;
         width: 100%;
        }
-    </style>
+  </style>
 </head>
 
 <body>
@@ -44,51 +44,62 @@
 
   <div class="container">
     <div class="row">
+      <div class="col-sm">
     <h1>Surviving Your PhD</h1>
       <h2>Our site is dedicated to helping you through the next 4 years!</h2>
         <img src="we_can_do_it.png" alt="Inspirational Image" style="width:300px;height:200px;">
       </div>
+    </div>
   </div>
 
   <div class="container">
-    <p>Do you ever find yourself struggling to find things to do in Bristol as a postgrad? Don't want to go to the undergrad hangouts but still want to socialise? This is the page for you! The Bristol Doctoral College Twitter page
+    <div class="row">
+      <div class="col-sm">
+    <p class="text-justify">Do you ever find yourself struggling to find things to do in Bristol as a postgrad? Don't want to go to the undergrad hangouts but still want to socialise? This is the page for you! The Bristol Doctoral College Twitter page
       <a href="https://twitter.com/bristoldc?lang=en">@bristoldc</a>
     is a good place to start! Once you've taken a look at the events they are running, check out our map!
     </p>
+      </div>
+    </div>
   </div>
 
-  <div>
+  <div class="container">
+    <div class="row">
     <ol>
-      <li>You can do it</li>
+      <div class="col-sm-4">
+      <li id="highest">You can do it</li>
+      </div>
+      <div class="col-sm-4">
       <li id="lower">We believe in you</li>
+      </div>
+      <div class="col-sm-4">
       <li id="lowest">Be proud of yourself</li>
+      </div>
     </ol>
+    </div>
   </div>
 
   <h3>PGR Hangouts</h3>
-    <!--The div element for the map -->
     <div id="map"></div>
     <script>
-// Initialize and add the map
 function initMap() {
-  // The location of Uluru
-  var uluru = {lat: -25.344, lng: 131.036};
-  // The map, centered at Uluru
+  var senate = {lat: 51.459, lng: -2.603};
+  var potts = {lat: 51.453, lng: -2.602};
+  var primrose = {lat: 51.45519, lng: -2.618161};
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
+      document.getElementById('map'), {zoom: 13, center: senate});
+  var marker = new google.maps.Marker({position: senate, map: map});
+  var marker = new google.maps.Marker({position: potts, map: map});
+  var marker = new google.maps.Marker({position: primrose, map: map});
+
 }
     </script>
-    <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
+
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLWx6x9bqU07G2Jp4TLJMZhlYqyXokDbw&callback=initMap">
     </script>
 </body>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
