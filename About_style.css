@@ -36,41 +36,14 @@ p {
   text-align: center;
 }
 
-a {
+.page_url {
+  text-decoration: underline;
   color: rgb(72,61,139);
 }
 
-ol {
-  padding: 0;
-  margin-bottom: 10%;
-  font-size: 3em;
-  display: flex;
-  justify-content: space-evenly;
+.name {
+  margin: 3vh 3vw;
+  color: rgb(54,69,79);
+  font-size: 2.5em;
   text-align: center;
-}
-
-li#lower {
-  margin-top: 7%;
-  text-align; center;
-}
-
-li#lowest {
-  margin-bottom: 14%;
-  text-align; right;
-}
-
-
-ul {
-  list-style: none;
-  display: flex;
-}
-
-li {
-  margin: 0 0px;
-  transition: 0.6s ease;
-}
-
-li:hover {
-  font-size: 1.2em;
-  transition: 0.6s ease;
 }
