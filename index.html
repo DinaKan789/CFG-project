@@ -4,7 +4,7 @@
 <head>
   <title>Surviving Your PhD</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="Landing_style.css">
+  <link rel="stylesheet" type="text/css" href="Index_style.css">
   <style>
       #map {
         height: 400px;
@@ -58,48 +58,17 @@
     <p class="text-justify">Do you ever find yourself struggling to find things to do in Bristol as a postgrad? Don't want to go to the undergrad hangouts but still want to socialise? This is the page for you! The Bristol Doctoral College Twitter page
       <a href="https://twitter.com/bristoldc?lang=en">@bristoldc</a>
     is a good place to start! Once you've taken a look at the events they are running, check out our map!
+    <ol>
+        <li>You can do it</li>
+        <li>We believe in you</li>
+        <li id="right">Be proud of yourself</li>
+    </ol>
     </p>
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="text-center">
-        <ol>
-          <div class="col-sm">
-            <li>You can do it</li>
-          </div>
-          <div class="col-sm">
-            <li>We believe in you</li>
-          </div>
-          <div class="col-sm">
-            <li>Be proud of yourself</li>
-          </div>
-        </ol>
-      </div>
-    </div>
-  </div>
-
-  <h3>PGR Hangouts</h3>
-    <div id="map"></div>
-    <script>
-function initMap() {
-  var senate = {lat: 51.459, lng: -2.603};
-  var potts = {lat: 51.453, lng: -2.602};
-  var primrose = {lat: 51.45519, lng: -2.618161};
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13, center: senate});
-  var marker = new google.maps.Marker({position: senate, map: map});
-  var marker = new google.maps.Marker({position: potts, map: map});
-  var marker = new google.maps.Marker({position: primrose, map: map});
-
-}
-    </script>
-
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLWx6x9bqU07G2Jp4TLJMZhlYqyXokDbw&callback=initMap">
-    </script>
+  <iframe src="https://www.google.co.uk/maps/d/embed?mid=10mdxvRXufTU4mFxarI4h4KiiKmgjUuBt" width=100% height="480"></iframe>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
