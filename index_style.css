@@ -41,7 +41,7 @@ ol {
   list-style: none;
   padding: 0;
   margin-bottom: 10%;
-  font-size: large;
+  font-size: 20vw;
   display: flex;
   width: 100%;
   flex-grow: 1;
