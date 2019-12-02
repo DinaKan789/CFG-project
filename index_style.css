@@ -40,15 +40,13 @@ p {
 ol {
   list-style: none;
   padding: 0;
-  margin-bottom: 10%;
-  font-size: 20vw;
+  font-size: 2em;
   display: flex;
   width: 100%;
   flex-grow: 1;
   justify-content:space-evenly;
   white-space: nowrap;
   text-align: center;
-  -webkit-transition: padding 2s;
 }
 
 #top:hover {
