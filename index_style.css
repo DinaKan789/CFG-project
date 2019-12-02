@@ -32,8 +32,9 @@ p {
   margin: 20px;
 }
 
-a {
+.bdc {
   color: rgb(54,69,79);
+  text-decoration: underline;
 }
 
 ol {
@@ -47,6 +48,7 @@ ol {
   justify-content:space-evenly;
   white-space: nowrap;
   text-align: center;
+  -webkit-transition: padding 2s;
 }
 
 #top:hover {
